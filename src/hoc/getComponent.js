@@ -3,7 +3,7 @@ import withSomething from './withSomething';
 import withServiceCall from './withServiceCall';
 import withLoading from './withLoading';
 
-const withContainer = ({LoadingComponent}) => WrapperComponent => {
+const getComponent = ({LoadingComponent}) => WrapperComponent => {
   return compose(
     withSomething,
     withServiceCall,

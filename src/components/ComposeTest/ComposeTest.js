@@ -21,7 +21,7 @@ const ComposeTest = ({layout, something, isLoading, LoadingComponent}) => {
           {something}
         </div>
         <div>
-          {isLoading ? 'loading' : null}
+          {LoadingComponent}
         </div>
       </div>
     </div>

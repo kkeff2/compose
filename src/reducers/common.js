@@ -23,10 +23,11 @@ export default (state = initialState, action = {}) => {
       };
     }
     case ASYNC_CALL_OK: {
+      debugger;
       return {
         ...state,
         isLoading: false,
-        response: action.ok,
+        response: action.test,
         errorMessage: null
       };
     }
