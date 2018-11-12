@@ -2,13 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const propTypes = {
-  LoadingComponent: PropTypes.any,
+  LoadingComponent: PropTypes.element,
+  ResponseComponent: PropTypes.element,
   isLoading: PropTypes.bool.isRequired,
   layout: PropTypes.object.isRequired,
   something: PropTypes.string
 };
 
-const ComposeTest = ({layout, something, isLoading, LoadingComponent}) => {
+const ComposeTest = ({layout, something, isLoading, LoadingComponent, ResponseComponent}) => {
   console.log(LoadingComponent);
   console.log(isLoading);
   return (
@@ -22,6 +23,7 @@ const ComposeTest = ({layout, something, isLoading, LoadingComponent}) => {
         </div>
         <div>
           {LoadingComponent}
+          {ResponseComponent}
         </div>
       </div>
     </div>

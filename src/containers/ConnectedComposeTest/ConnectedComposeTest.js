@@ -4,6 +4,7 @@ import { compose } from 'redux';
 import { callFakeServer } from '../../actions/common';
 import ComposeTest from '../../components/ComposeTest/ComposeTest';
 import LoadingComponent from '../../components/utils/LoadingComponent';
+import ComposeInner from '../../components/ComposeTest/ComposeInner';
 import withContainer from '../../hoc/withContainer';
 
 const mapStateToProps = state => ({
@@ -21,6 +22,7 @@ const mapDispatchToProps = dispatch => ({
 export default compose(
   connect(mapStateToProps, mapDispatchToProps),
   withContainer({
-    LoadingComponent: LoadingComponent
+    LoadingComponent: LoadingComponent,
+    ResponseComponent: ComposeInner
   })
 )(ComposeTest);
