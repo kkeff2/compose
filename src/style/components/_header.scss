@@ -1,0 +1,15 @@
+@import '../utils/colors';
+
+.panel-top {
+  display: flex;
+  align-items: center;
+  background-color: $header-color;
+  min-height: 2.5rem;
+  color: white;
+
+  img {
+    margin-left: 10%;
+    width: 7rem;
+    height: 2rem;
+  }
+}

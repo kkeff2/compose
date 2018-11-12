@@ -1,0 +1,12 @@
+@import '../utils/colors';
+
+.large-spinner {
+  margin-top: 10rem;
+
+  svg {
+    background: none;
+    fill: $red;
+    height: 20rem;
+    width: 20rem;
+  }
+}

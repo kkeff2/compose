@@ -1,0 +1,31 @@
+@import '../utils/colors';
+
+html,
+body,
+#root,
+.root-container,
+.app-container {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+.content-container {
+  height: calc(100% - 4.5rem);
+  background-color: $content-color;
+}
+
+.compose-test {
+  height: 33rem;
+  background-color: $content-color;
+  padding: 20px;
+}
+
+.loading {
+  padding: 20px;
+  background-color: orange;
+}
+
+// TODO: Media breakpoints

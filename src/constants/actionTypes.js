@@ -1,0 +1,3 @@
+export const ASYNC_CALL_START = 'ASYNC_CALL_START';
+export const ASYNC_CALL_OK = 'ASYNC_CALL_OK';
+export const ASYNC_CALL_ERROR = 'ASYNC_CALL_ERROR';
